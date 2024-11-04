@@ -1,2 +1,2 @@
 # Proyecto_Prediccion_Demanda
-MODELO DE PREDICCIÓN DE LA DEMANDA UTILIZANDO ARIMA, SARIMA Y LIGHT GRADIENT BOOSTING MACHINE EN ENTORNOS INTERMITENTES PARA LA PLANIFICACIÓN EFICIENTE DE INVENTARIOS
+Modelo de predicción de la demanda utilizando arima, sarima y light gradient boosting machine en entornos intermitentes para la planificación eficiente de inventarios.
