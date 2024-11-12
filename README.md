@@ -7,15 +7,33 @@
 
 Este repositorio contiene el código y el análisis para un modelo de predicción de demanda que busca optimizar los niveles de inventario en una empresa minorista. Utilizando datos de ventas unitarias diarias de tiendas Walmart, este proyecto implementa y compara tres modelos de pronóstico — ARIMA, SARIMA y Light Gradient Boosting Machine (LGBM) — para mejorar la planificación y gestión de inventarios.
 
-### Problema a resolver:
+## Tabla de Contenidos
+- [Resumen del Proyecto](#resumen-del-proyecto)
+- [Problema a resolver](#problema-a-resolver)
+- [Modelos seleccionados](#modelos-seleccionados)
+- [Base de datos](#base-de-datos)
+- [Metodología](#metodología)
+- [Datos](#datos)
+- [Selección y Evaluación de Modelos](#selección-y-evaluación-de-modelos)
+- [Resultados e Insights](#resultados-e-insights)
+- [Cómo usar el Notebook para replicar los resultados](#cómo-usar-el-notebook-para-replicar-los-resultados)
+- [Trabajo Futuro](#trabajo-futuro)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
+
+### Resumen del Proyecto
+
 La gestión de inventarios es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar tanto el exceso de inventario como el desabastecimiento.
 
-### Modelos seleccionados:
+### Problema a resolver
+La gestión de inventarios es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar tanto el exceso de inventario como el desabastecimiento.
+
+### Modelos seleccionados
 1. **ARIMA**: Un modelo de series temporales tradicional que utiliza componentes autorregresivos, de diferenciación y de promedio móvil para prever la demanda.
 2. **SARIMA**: Una extensión de ARIMA que incorpora estacionalidad para capturar patrones periódicos en los datos.
 3. **LGBM**: Un algoritmo de gradient boosting que incorpora variables explicativas y puede modelar relaciones no lineales, lo que le permite manejar conjuntos de datos complejos.
 
-### Base de datos:
+### Base de datos
 La base de datos empleada para el presente proyecto es pública y se puede encontrar en el siguiente enlace: [M5 Forecasting Accuracy Dataset en Kaggle](https://www.kaggle.com/c/m5-forecasting-accuracy/data)
 
 Este proyecto utiliza el conjunto de datos M5, que proporciona datos de ventas diarias de productos de Walmart, para crear y validar modelos de predicción de demanda a nivel de categoría y de ítem. El objetivo principal es identificar el modelo más efectivo para predecir la demanda en un entorno minorista complejo e integrar las predicciones en los sistemas de gestión de inventarios.
@@ -61,7 +79,7 @@ Resumen de Resultados:
 - **Patrones Estacionales y Temporales**: Se observó un aumento en las ventas durante los fines de semana y en ciertos meses, como agosto, mientras que enero y febrero mostraron niveles de demanda más bajos.
 - **Integración en la Gestión de Inventarios**: Las predicciones del modelo pueden integrarse con un sistema de gestión de inventarios para establecer niveles óptimos de stock, con recomendaciones para ajustar el inventario basado en fluctuaciones predichas.
 
-### Cómo usar el Notebook para replicar los resultados:
+### Cómo usar el Notebook para replicar los resultados
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/usuario/modelo-prediccion-demanda-optimizacion-inventarios.git
