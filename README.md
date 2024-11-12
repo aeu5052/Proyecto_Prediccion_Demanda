@@ -1,7 +1,7 @@
 # **Proyecto de Titulación MBD**
-## Maestría en Inteligencia de Negocios y Ciencia de Datos
-## Universidad de las Américas
-## Autor: Andrés Esteban Ulloa Jaramillo
+## **Maestría en Inteligencia de Negocios y Ciencia de Datos**
+## **Universidad de las Américas**
+## **Autor:** Andrés Esteban Ulloa Jaramillo
 
 ### Problema a resolver:
 
