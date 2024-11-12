@@ -85,8 +85,7 @@ Para ejecutar este notebook en un entorno nuevo, asegúrate de que se instalen l
 ### Cómo usar el Notebook para replicar los resultados
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/modelo-prediccion-demanda-optimizacion-inventarios.git
-   cd modelo-prediccion-demanda-optimizacion-inventarios
+   git clone https://github.com/usuario/modelo-prediccion-demanda-optimizacion-inventarios.git](https://github.com/aeu5052/Proyecto_Prediccion_Demanda.git
    ```
 
 2. Instala las dependencias:
