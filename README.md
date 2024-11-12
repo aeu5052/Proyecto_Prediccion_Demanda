@@ -73,6 +73,19 @@ Resumen de Resultados:
 - **Patrones Estacionales y Temporales**: Se observó un aumento en las ventas durante los fines de semana y en ciertos meses, como agosto, mientras que enero y febrero mostraron niveles de demanda más bajos.
 - **Integración en la Gestión de Inventarios**: Las predicciones del modelo pueden integrarse con un sistema de gestión de inventarios para establecer niveles óptimos de stock, con recomendaciones para ajustar el inventario basado en fluctuaciones predichas.
 
+## Requisitos
+
+Para ejecutar el notebook y replicar los resultados del proyecto, se requiere instalar las siguientes bibliotecas en Python:
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `statsmodels`
+- `lightgbm`
+
+Estas bibliotecas se pueden instalar mediante el archivo `requirements.txt` incluido en el repositorio.
+
 ### Cómo usar el Notebook para replicar los resultados
 1. Clona el repositorio:
    ```bash
