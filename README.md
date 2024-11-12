@@ -75,17 +75,12 @@ Resumen de Resultados:
 - **Integración en la Gestión de Inventarios**: Las predicciones del modelo pueden integrarse con un sistema de gestión de inventarios para establecer niveles óptimos de stock, con recomendaciones para ajustar el inventario basado en fluctuaciones predichas.
 
 ## Requisitos
+Para ejecutar este notebook en un entorno nuevo, asegúrate de que se instalen las bibliotecas necesarias. La primera celda del notebook contiene el siguiente código que instalará todas las dependencias automáticamente:
 
-Para ejecutar el notebook y replicar los resultados del proyecto, se requiere instalar las siguientes bibliotecas en Python:
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `statsmodels`
-- `lightgbm`
-
-Estas bibliotecas se pueden instalar mediante el archivo `requirements.txt` incluido en el repositorio.
+```python
+# Instala todas las bibliotecas necesarias
+!pip install numpy pandas matplotlib seaborn scikit-learn statsmodels lightgbm
+```
 
 ### Cómo usar el Notebook para replicar los resultados
 1. Clona el repositorio:
@@ -95,8 +90,9 @@ Estas bibliotecas se pueden instalar mediante el archivo `requirements.txt` incl
    ```
 
 2. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
+   ```python
+   # Instala todas las bibliotecas necesarias
+   !pip install numpy pandas matplotlib seaborn scikit-learn statsmodels lightgbm
    ```
 
 3. Ejecuta el Jupyter Notebook:
