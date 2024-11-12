@@ -23,7 +23,6 @@ Este repositorio contiene el código empleado para generar un modelo de predicci
 - [Licencia](#licencia)
 
 ### Resumen del Proyecto
-
 La gestión de inventarios es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar tanto el exceso de inventario como el desabastecimiento.
 
 ### Problema a resolver
@@ -98,17 +97,14 @@ Para ejecutar este notebook en un entorno nuevo, asegúrate de que se instalen l
    Abre `4_prediccion_demanda_final.ipynb` para ver y ejecutar el código de preprocesamiento de datos, entrenamiento de modelos y evaluación.
 
 ## Trabajo Futuro
-
 - **Ajustes Automatizados de Inventario**: Incorporar un sistema dinámico para actualizar los umbrales de inventario basados en predicciones de demanda en tiempo real.
 - **Integración de Datos Externos**: Incluir variables externas (como indicadores económicos) para mejorar la precisión de las predicciones.
 - **Escalabilidad**: Adaptar el modelo para su uso en múltiples tiendas y categorías de productos.
 
 ## Contribuciones
-
 ¡Las contribuciones son bienvenidas! Haz un fork del repositorio y envía un pull request para cualquier cambio o mejora propuesta.
 
 ## Licencia
-
 Este proyecto está licenciado bajo la Licencia MIT.
 
 ---
