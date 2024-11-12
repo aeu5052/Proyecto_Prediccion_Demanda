@@ -36,6 +36,8 @@ La planificación de existencias es un desafío crítico en la industria minoris
 ### Base de datos
 La base de datos empleada para el presente proyecto es pública y se puede encontrar en Kaggle, accediendo al siguiente enlace: [M5 Forecasting Accuracy Dataset en Kaggle](https://www.kaggle.com/c/m5-forecasting-accuracy/data)
 
+También se puede encontrar la base de datos en la siguiente carpeta: [M5 Base de datos](https://drive.google.com/drive/folders/1K7tF3ZUQB0i1bPm2kJi4K3RnPmFcWxjg?usp=sharing)
+
 Este proyecto utiliza el conjunto de datos M5, que proporciona datos de ventas diarias de productos de Walmart, para crear y validar modelos de predicción de demanda a nivel de categoría y de ítem. El objetivo principal es identificar el modelo más efectivo para predecir la demanda en un entorno minorista complejo e integrar las predicciones en los sistemas de gestión de inventarios.
 
 ## Metodología
