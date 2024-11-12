@@ -5,7 +5,7 @@
 
 # Modelo Predictivo de la Demanda para la Optimización de Inventarios
 
-Este repositorio contiene el código y el análisis para un modelo de predicción de demanda que busca optimizar los niveles de inventario en una empresa minorista. Utilizando datos de ventas unitarias diarias de tiendas Walmart, este proyecto implementa y compara tres modelos de pronóstico — ARIMA, SARIMA y Light Gradient Boosting Machine (LGBM) — para mejorar la planificación y gestión de inventarios.
+Este repositorio contiene el código empleado para generar un modelo de predicción de la demanda que busca optimizar los niveles de inventario en una empresa minorista. Utilizando datos de ventas unitarias diarias de tiendas Walmart, este proyecto implementa y compara tres modelos de pronóstico: ARIMA, SARIMA y Light Gradient Boosting Machine, para optimizar la planificación y gestión de stock.
 
 ## Tabla de Contenidos
 - [Resumen del Proyecto](#resumen-del-proyecto)
@@ -26,34 +26,28 @@ Este repositorio contiene el código y el análisis para un modelo de predicció
 La gestión de inventarios es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar tanto el exceso de inventario como el desabastecimiento.
 
 ### Problema a resolver
-La gestión de inventarios es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar tanto el exceso de inventario como el desabastecimiento.
+La planificación de existencias es un desafío crítico en la industria minorista, caracterizada por la volatilidad e incertidumbre de la demanda. Los modelos predictivos pueden ayudar a mitigar estos problemas al anticipar la demanda futura y evitar dificultades como el sobrestock o la falta de inventario.
 
 ### Modelos seleccionados
 1. **ARIMA**: Un modelo de series temporales tradicional que utiliza componentes autorregresivos, de diferenciación y de promedio móvil para prever la demanda.
 2. **SARIMA**: Una extensión de ARIMA que incorpora estacionalidad para capturar patrones periódicos en los datos.
-3. **LGBM**: Un algoritmo de gradient boosting que incorpora variables explicativas y puede modelar relaciones no lineales, lo que le permite manejar conjuntos de datos complejos.
+3. **LGBM**: Un algoritmo de gradient boosting, basado en árboles de decisión, que incorpora variables explicativas y puede modelar relaciones no lineales, lo que le permite manejar conjuntos de datos complejos y con alta volatilidad.
 
 ### Base de datos
-La base de datos empleada para el presente proyecto es pública y se puede encontrar en el siguiente enlace: [M5 Forecasting Accuracy Dataset en Kaggle](https://www.kaggle.com/c/m5-forecasting-accuracy/data)
+La base de datos empleada para el presente proyecto es pública y se puede encontrar en Kaggle, accediendo al siguiente enlace: [M5 Forecasting Accuracy Dataset en Kaggle](https://www.kaggle.com/c/m5-forecasting-accuracy/data)
 
 Este proyecto utiliza el conjunto de datos M5, que proporciona datos de ventas diarias de productos de Walmart, para crear y validar modelos de predicción de demanda a nivel de categoría y de ítem. El objetivo principal es identificar el modelo más efectivo para predecir la demanda en un entorno minorista complejo e integrar las predicciones en los sistemas de gestión de inventarios.
 
 ## Metodología
+El proceso de preparación de datos incluye la unión de múltiples tablas, el filtrado por tienda y rango de tiempo, y el manejo de valores faltantes. Además, se aplicaron técnicas de ingeniería de características para mejorar el rendimiento del modelo LGBM, añadiendo datos de ventas rezagadas, promedios móviles, indicadores temporales categóricos, interacciones entre variables, entre otras.
 
-El proceso de preparación de datos incluye la unión de múltiples tablas, el filtrado por tienda y rango de tiempo, y el manejo de valores faltantes. Además, se aplicaron técnicas de ingeniería de características para mejorar el rendimiento de LGBM, añadiendo datos de ventas retrasadas, promedios móviles e indicadores temporales categóricos.
-
-## Datos
-
-El conjunto de datos, M5, está disponible públicamente en Kaggle y contiene datos de ventas unitarias diarias de Walmart en tres estados de EE.UU.: California, Texas y Wisconsin. Los productos están clasificados por departamento e ítem, lo que permite realizar pronósticos a diferentes niveles de granularidad.
-
-### Pasos de Procesamiento de Datos:
+### Pasos de Pre-Procesamiento de Datos:
 - **Consolidación**: Unión de tablas de historial de ventas, precios y fechas.
 - **Filtrado**: Selección de datos de una tienda en California y reducción a los últimos tres años.
 - **Imputación**: Relleno de valores faltantes en precios e indicadores binarios de eventos.
 - **Ingeniería de Características**: Creación de variables de rezago, promedios móviles, ventas acumuladas e interacciones para los modelos LGBM.
 
 ## Selección y Evaluación de Modelos
-
 Cada modelo fue evaluado con dos métricas:
 - **Error Absoluto Medio (MAE)**: Promedio de las diferencias absolutas entre los valores predichos y reales.
 - **Error Cuadrático Medio (RMSE)**: Raíz cuadrada del promedio de las diferencias al cuadrado, dando mayor peso a errores grandes.
