@@ -16,6 +16,7 @@ Este repositorio contiene el código empleado para generar un modelo de predicci
 - [Datos](#datos)
 - [Selección y Evaluación de Modelos](#selección-y-evaluación-de-modelos)
 - [Resultados e Insights](#resultados-e-insights)
+- [Requisitos](#requisitos)
 - [Cómo usar el Notebook para replicar los resultados](#cómo-usar-el-notebook-para-replicar-los-resultados)
 - [Trabajo Futuro](#trabajo-futuro)
 - [Contribuciones](#contribuciones)
